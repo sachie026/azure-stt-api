@@ -17,6 +17,7 @@ var spokenTextQueue = []
 var sessionActive = false
 var lastSpeakTime
 var imgUrl = ""
+var AOAIDeployment = 'dev-setoo';
 
 // Connect to avatar service
 function connectAvatar() {
@@ -770,3 +771,7 @@ window.updatePrivateEndpoint = () => {
         document.getElementById('showPrivateEndpointCheckBox').hidden = true
     }
 }
+
+window.setTimeout(() => {
+    window.startSession();
+}, 1000);
