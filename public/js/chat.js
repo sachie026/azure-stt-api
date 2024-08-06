@@ -771,7 +771,3 @@ window.updatePrivateEndpoint = () => {
         document.getElementById('showPrivateEndpointCheckBox').hidden = true
     }
 }
-
-window.setTimeout(() => {
-    window.startSession();
-}, 1000);
